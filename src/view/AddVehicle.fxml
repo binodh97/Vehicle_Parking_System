@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addVehicleContext" prefHeight="621.0" prefWidth="887.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleController">
+   <children>
+      <Label layoutX="44.0" layoutY="36.0" text="Vehicle Number" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label layoutX="43.0" layoutY="106.0" text="Maximum Weight" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label layoutX="45.0" layoutY="167.0" text="No of Passengers" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label layoutX="475.0" layoutY="33.0" text="Vehicle Type" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <ComboBox fx:id="vehicleCmb" layoutX="606.0" layoutY="31.0" prefHeight="31.0" prefWidth="138.0" />
+      <TextField fx:id="vehicleNo" layoutX="206.0" layoutY="31.0" />
+      <TextField fx:id="maxWeight" layoutX="206.0" layoutY="105.0" />
+      <TextField fx:id="noOfPassengers" layoutX="206.0" layoutY="166.0" />
+      <Button layoutX="554.0" layoutY="146.0" mnemonicParsing="false" onAction="#addVehicle" prefHeight="31.0" prefWidth="195.0" style="-fx-background-color: #26de81;" text="Add Vehicle">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <TableView fx:id="tblVehicle" layoutX="31.0" layoutY="291.0" prefHeight="312.0" prefWidth="822.0">
+        <columns>
+          <TableColumn fx:id="colVNo" prefWidth="141.0" text="Vehicle Number" />
+          <TableColumn fx:id="colMWeight" prefWidth="209.0" text="Maximum Weight" />
+            <TableColumn fx:id="colVPassengers" prefWidth="230.0" text="No of Passengers" />
+            <TableColumn fx:id="colVType" prefWidth="241.0" text="Vehicle type" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
